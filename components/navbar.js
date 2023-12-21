@@ -1,6 +1,8 @@
+import {  useRouter } from "next/router";
 import React from "react";
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <div>
       <nav className="bg-gray-800">
@@ -50,35 +52,36 @@ const Navbar = () => {
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  className="h-12 w-auto hover:cursor-pointer"
+                  src="https://cdn0.iconfinder.com/data/icons/famous-character-vol-1-colored/48/JD-41-512.png"
                   alt="Your Company"
+                  onClick={()=> {router.push("/")}}
                 />
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   <a
                     href="/ssr"
-                    className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                    className="bg-gray-900 text-white rounded-md px-2 py-4 text-sm font-medium"
                     aria-current="page"
                   >
                     SSR
                   </a>
                   <a
                     href="/csr"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium"
                   >
                     CSR
                   </a>
                   <a
                     href="/ssg"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium"
                   >
                     SSG
                   </a>
                   <a
                     href="/isr"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium"
                   >
                     ISR
                   </a>
