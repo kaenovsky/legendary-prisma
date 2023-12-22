@@ -14,7 +14,7 @@ const Index = () => {
         const res = await fetch(url);
         let chars = await res.json();
         //chars.sort((a, b) => a.name.localeCompare(b.name)); // Ordenar por nombre alfabéticamente para que se vea mejor en el grid de cards.
-        chars = chars.slice(0,3);
+        //chars = chars.slice(0,3);
         setChars(chars);
     }
 

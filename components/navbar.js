@@ -62,7 +62,7 @@ const Navbar = () => {
                 <div className="flex space-x-4">
                   <a
                     href="/ssr"
-                    className="bg-gray-900 text-white rounded-md px-2 py-4 text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-4 text-sm font-medium"
                     aria-current="page"
                   >
                     SSR
