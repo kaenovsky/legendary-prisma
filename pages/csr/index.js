@@ -22,7 +22,7 @@ const Index = () => {
         <div>
             <Navbar />
             <div className="container mx-auto my-8">
-                <h1 className="text-3xl font-semibold mb-4">Star Wars Characters (CSR)</h1>
+                <h1 className="text-3xl font-semibold mb-4">Star Wars Characters (CSR - Client Side Rendering)</h1>
                 <p className='text-xl mb-10'>Útil para aplicaciones interactivas donde la carga dinámica de datos en el lado del cliente es esencial. Puede ser más adecuado cuando el contenido cambia rápidamente y la latencia inicial no es una preocupación</p>
                 <CardGrid cards={chars} />
             </div>
