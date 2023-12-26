@@ -9,7 +9,7 @@ const Index = ({chars}) => {
             <Navbar />
             <div className="container mx-auto my-8">
                 <h1 className="text-3xl font-semibold mb-4">Star Wars Characters (ISR - Incremental Static Regeneration)</h1>
-                <p className='text-xl mb-10'>Recomendado para sitios web con contenido estático o semiestático, ya que proporciona un rendimiento superior y una mayor seguridad al generar páginas de antemano.</p>
+                <p className='text-xl mb-10'>Tomando como base el hecho de que las páginas serán generadas en el build time (SSG), podemos agregar una configuración para que la página vuelva a ser generada en request time o sea cuando el usuario entra a la página.</p>
                 <CardGrid cards={chars} />
             </div>
         </div>
